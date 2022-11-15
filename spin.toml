@@ -56,3 +56,11 @@ source = "components/highscore.wasm"
 environment = {REDIS_ADDRESS = "redis://localhost:6379/"}
 [component.trigger]
 route = "/highscore"
+
+# Reset Highscores
+[[component]]
+id = "highscore_reset"
+source = "components/highscore_reset.wasm"
+environment = {REDIS_ADDRESS = "redis://localhost:6379/"}
+[component.trigger]
+route = "/highscore-reset"
